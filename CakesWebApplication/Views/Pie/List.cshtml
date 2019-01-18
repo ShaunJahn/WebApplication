@@ -1,0 +1,13 @@
+﻿@model PieListViewModel
+
+
+
+@ViewBag.CurrentCategory
+<div class = "container">
+    <div class="row">
+        @foreach (var pie in Model.Pies)
+        {
+            @Html.Partial("PiesViews", pie);
+        }
+    </div>
+</div>
